@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <!-- Material Design 3 Color System -->
+    
+    <!-- Light Theme -->
+    <Color x:Key="PrimaryLight">#6750A4</Color>
+    <Color x:Key="OnPrimaryLight">#FFFFFF</Color>
+    <Color x:Key="PrimaryContainerLight">#EADDFF</Color>
+    <Color x:Key="OnPrimaryContainerLight">#21005D</Color>
+    
+    <Color x:Key="SecondaryLight">#625B71</Color>
+    <Color x:Key="OnSecondaryLight">#FFFFFF</Color>
+    <Color x:Key="SecondaryContainerLight">#E8DEF8</Color>
+    <Color x:Key="OnSecondaryContainerLight">#1D192B</Color>
+    
+    <Color x:Key="TertiaryLight">#7D5260</Color>
+    <Color x:Key="OnTertiaryLight">#FFFFFF</Color>
+    <Color x:Key="TertiaryContainerLight">#FFD8E4</Color>
+    <Color x:Key="OnTertiaryContainerLight">#31111D</Color>
+    
+    <Color x:Key="ErrorLight">#BA1A1A</Color>
+    <Color x:Key="OnErrorLight">#FFFFFF</Color>
+    <Color x:Key="ErrorContainerLight">#FFDAD6</Color>
+    <Color x:Key="OnErrorContainerLight">#410002</Color>
+    
+    <Color x:Key="SurfaceLight">#FEF7FF</Color>
+    <Color x:Key="OnSurfaceLight">#1C1B1F</Color>
+    <Color x:Key="SurfaceVariantLight">#E7E0EC</Color>
+    <Color x:Key="OnSurfaceVariantLight">#49454F</Color>
+    
+    <Color x:Key="BackgroundLight">#FEF7FF</Color>
+    <Color x:Key="OnBackgroundLight">#1C1B1F</Color>
+    
+    <Color x:Key="OutlineLight">#79747E</Color>
+    <Color x:Key="OutlineVariantLight">#CAC4D0</Color>
+    
+    <!-- Dark Theme -->
+    <Color x:Key="PrimaryDark">#D0BCFF</Color>
+    <Color x:Key="OnPrimaryDark">#381E72</Color>
+    <Color x:Key="PrimaryContainerDark">#4F378B</Color>
+    <Color x:Key="OnPrimaryContainerDark">#EADDFF</Color>
+    
+    <Color x:Key="SecondaryDark">#CCC2DC</Color>
+    <Color x:Key="OnSecondaryDark">#332D41</Color>
+    <Color x:Key="SecondaryContainerDark">#4A4458</Color>
+    <Color x:Key="OnSecondaryContainerDark">#E8DEF8</Color>
+    
+    <Color x:Key="TertiaryDark">#EFB8C8</Color>
+    <Color x:Key="OnTertiaryDark">#492532</Color>
+    <Color x:Key="TertiaryContainerDark">#633B48</Color>
+    <Color x:Key="OnTertiaryContainerDark">#FFD8E4</Color>
+    
+    <Color x:Key="ErrorDark">#FFB4AB</Color>
+    <Color x:Key="OnErrorDark">#690005</Color>
+    <Color x:Key="ErrorContainerDark">#93000A</Color>
+    <Color x:Key="OnErrorContainerDark">#FFDAD6</Color>
+    
+    <Color x:Key="SurfaceDark">#1C1B1F</Color>
+    <Color x:Key="OnSurfaceDark">#E6E1E5</Color>
+    <Color x:Key="SurfaceVariantDark">#49454F</Color>
+    <Color x:Key="OnSurfaceVariantDark">#CAC4D0</Color>
+    
+    <Color x:Key="BackgroundDark">#1C1B1F</Color>
+    <Color x:Key="OnBackgroundDark">#E6E1E5</Color>
+    
+    <Color x:Key="OutlineDark">#938F99</Color>
+    <Color x:Key="OutlineVariantDark">#49454F</Color>
+
+    <!-- Simplified Dynamic Colors -->
+    <Color x:Key="PrimaryColor">#6750A4</Color>
+    <Color x:Key="OnPrimaryColor">#FFFFFF</Color>
+    <Color x:Key="SecondaryColor">#625B71</Color>
+    <Color x:Key="OnSecondaryColor">#FFFFFF</Color>
+    <Color x:Key="TertiaryColor">#7D5260</Color>
+    <Color x:Key="OnTertiaryColor">#FFFFFF</Color>
+    <Color x:Key="SurfaceColor">#FEF7FF</Color>
+    <Color x:Key="OnSurfaceColor">#1C1B1F</Color>
+    <Color x:Key="BackgroundColor">#FEF7FF</Color>
+    <Color x:Key="OnBackgroundColor">#1C1B1F</Color>
+    <Color x:Key="OutlineColor">#79747E</Color>
+    
+    <!-- Material Design Colors for Light and Dark themes -->
+    <Style TargetType="ContentPage">
+        <Setter Property="BackgroundColor" Value="{AppThemeBinding Light=#FEF7FF, Dark=#1C1B1F}" />
+    </Style>
+    
+    <!-- Static Material Design Colors -->
+    <Color x:Key="MaterialPrimary">#6750A4</Color>
+    <Color x:Key="MaterialSecondary">#625B71</Color>
+    <Color x:Key="MaterialTertiary">#7D5260</Color>
+    <Color x:Key="MaterialSurface">#FFFFFF</Color>
+    <Color x:Key="MaterialOnSurface">#1C1B1F</Color>
+    <Color x:Key="MaterialBackground">#FEF7FF</Color>
+
+</ResourceDictionary>

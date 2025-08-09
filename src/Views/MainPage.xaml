@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TaskManagementApp.Views.MainPage"
+             Title="Task Management"
+             BackgroundColor="{DynamicResource MaterialBackground}">
+
+    <ScrollView>
+        <StackLayout Padding="24" Spacing="32">
+            
+            <!-- App Bar Card -->
+            <Frame BackgroundColor="{DynamicResource MaterialPrimary}"
+                   HasShadow="True"
+                   CornerRadius="16"
+                   Padding="24">
+                <StackLayout Spacing="8">
+                    <Label Text="Task Management"
+                           FontSize="28"
+                           FontAttributes="Bold"
+                           TextColor="White"
+                           HorizontalOptions="Center" />
+                    <Label Text="Organize your work efficiently"
+                           FontSize="14"
+                           TextColor="White"
+                           Opacity="0.8"
+                           HorizontalOptions="Center" />
+                </StackLayout>
+            </Frame>
+
+            <!-- Quick Actions Card -->
+            <Frame BackgroundColor="{DynamicResource MaterialSurface}"
+                   HasShadow="True"
+                   CornerRadius="16"
+                   Padding="20">
+                <StackLayout Spacing="16">
+                    <Label Text="Quick Actions"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           TextColor="{DynamicResource MaterialOnSurface}" />
+                    
+                    <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto" ColumnSpacing="12" RowSpacing="12">
+                        <!-- New Task Button -->
+                        <Button Grid.Column="0" Grid.Row="0"
+                                Text="✅ New Task"
+                                BackgroundColor="{DynamicResource MaterialPrimary}"
+                                TextColor="White"
+                                FontAttributes="Bold"
+                                CornerRadius="12"
+                                HeightRequest="60" />
+                        
+                        <!-- View Tasks Button -->
+                        <Button Grid.Column="1" Grid.Row="0"
+                                Text="📋 View Tasks"
+                                BackgroundColor="{DynamicResource MaterialSecondary}"
+                                TextColor="White"
+                                FontAttributes="Bold"
+                                CornerRadius="12"
+                                HeightRequest="60" />
+                        
+                        <!-- Projects Button -->
+                        <Button Grid.Column="0" Grid.Row="1"
+                                Text="📁 Projects"
+                                BackgroundColor="{DynamicResource MaterialTertiary}"
+                                TextColor="White"
+                                FontAttributes="Bold"
+                                CornerRadius="12"
+                                HeightRequest="60" />
+                        
+                        <!-- Settings Button -->
+                        <Button Grid.Column="1" Grid.Row="1"
+                                Text="⚙️ Settings"
+                                BackgroundColor="LightGray"
+                                TextColor="{DynamicResource MaterialOnSurface}"
+                                FontAttributes="Bold"
+                                CornerRadius="12"
+                                HeightRequest="60" />
+                    </Grid>
+                </StackLayout>
+            </Frame>
+
+            <!-- Stats Card -->
+            <Frame BackgroundColor="{DynamicResource MaterialSurface}"
+                   HasShadow="True"
+                   CornerRadius="16"
+                   Padding="20">
+                <StackLayout Spacing="16">
+                    <Label Text="Today's Overview"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           TextColor="{DynamicResource MaterialOnSurface}" />
+                    
+                    <Grid ColumnDefinitions="*,*,*" ColumnSpacing="16">
+                        <!-- Completed Tasks -->
+                        <StackLayout Grid.Column="0" Spacing="4">
+                            <Label Text="5"
+                                   FontSize="32"
+                                   FontAttributes="Bold"
+                                   TextColor="{DynamicResource MaterialPrimary}"
+                                   HorizontalOptions="Center" />
+                            <Label Text="Completed"
+                                   FontSize="12"
+                                   TextColor="{DynamicResource MaterialOnSurface}"
+                                   Opacity="0.7"
+                                   HorizontalOptions="Center" />
+                        </StackLayout>
+                        
+                        <!-- Pending Tasks -->
+                        <StackLayout Grid.Column="1" Spacing="4">
+                            <Label Text="3"
+                                   FontSize="32"
+                                   FontAttributes="Bold"
+                                   TextColor="{DynamicResource MaterialSecondary}"
+                                   HorizontalOptions="Center" />
+                            <Label Text="Pending"
+                                   FontSize="12"
+                                   TextColor="{DynamicResource MaterialOnSurface}"
+                                   Opacity="0.7"
+                                   HorizontalOptions="Center" />
+                        </StackLayout>
+                        
+                        <!-- Total Projects -->
+                        <StackLayout Grid.Column="2" Spacing="4">
+                            <Label Text="2"
+                                   FontSize="32"
+                                   FontAttributes="Bold"
+                                   TextColor="{DynamicResource MaterialTertiary}"
+                                   HorizontalOptions="Center" />
+                            <Label Text="Projects"
+                                   FontSize="12"
+                                   TextColor="{DynamicResource MaterialOnSurface}"
+                                   Opacity="0.7"
+                                   HorizontalOptions="Center" />
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+            </Frame>
+
+            <!-- Recent Activity Card -->
+            <Frame BackgroundColor="{DynamicResource MaterialSurface}"
+                   HasShadow="True"
+                   CornerRadius="16"
+                   Padding="20">
+                <StackLayout Spacing="16">
+                    <Label Text="Recent Activity"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           TextColor="{DynamicResource MaterialOnSurface}" />
+                    
+                    <!-- Activity Items -->
+                    <StackLayout Spacing="12">
+                        <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="12">
+                            <Ellipse Grid.Column="0"
+                                     Fill="{DynamicResource MaterialPrimary}"
+                                     WidthRequest="8"
+                                     HeightRequest="8"
+                                     VerticalOptions="Center" />
+                            <StackLayout Grid.Column="1">
+                                <Label Text="Completed 'Review project proposal'"
+                                       FontSize="14"
+                                       TextColor="{DynamicResource MaterialOnSurface}" />
+                                <Label Text="2 hours ago"
+                                       FontSize="12"
+                                       TextColor="{DynamicResource MaterialOnSurface}"
+                                       Opacity="0.6" />
+                            </StackLayout>
+                        </Grid>
+                        
+                        <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="12">
+                            <Ellipse Grid.Column="0"
+                                     Fill="{DynamicResource MaterialSecondary}"
+                                     WidthRequest="8"
+                                     HeightRequest="8"
+                                     VerticalOptions="Center" />
+                            <StackLayout Grid.Column="1">
+                                <Label Text="Added new task 'Team meeting'"
+                                       FontSize="14"
+                                       TextColor="{DynamicResource MaterialOnSurface}" />
+                                <Label Text="4 hours ago"
+                                       FontSize="12"
+                                       TextColor="{DynamicResource MaterialOnSurface}"
+                                       Opacity="0.6" />
+                            </StackLayout>
+                        </Grid>
+                        
+                        <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="12">
+                            <Ellipse Grid.Column="0"
+                                     Fill="{DynamicResource MaterialTertiary}"
+                                     WidthRequest="8"
+                                     HeightRequest="8"
+                                     VerticalOptions="Center" />
+                            <StackLayout Grid.Column="1">
+                                <Label Text="Created project 'Mobile App'"
+                                       FontSize="14"
+                                       TextColor="{DynamicResource MaterialOnSurface}" />
+                                <Label Text="Yesterday"
+                                       FontSize="12"
+                                       TextColor="{DynamicResource MaterialOnSurface}"
+                                       Opacity="0.6" />
+                            </StackLayout>
+                        </Grid>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
